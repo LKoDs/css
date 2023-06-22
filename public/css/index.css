@@ -1,7 +1,26 @@
-html {
-  max-width: 720px;
+.card {
+  color: red;
 }
 
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(238, 255, 0);
+  -webkit-text-stroke: 1px rgb(255, 0, 191);
+
+  direction: rtl;
+}
+
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+   text-align: justify;
 }

@@ -1,0 +1,153 @@
+:root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #d9d8d8
+}
+
+#user {
+  color: blue;
+  /* надає колір для усіх тегів по id */
+}
+
+h1, h2, button {
+  color: green;
+}
+
+h1.button {
+  color: violet;
+  /* Надати колір тегу h1 з классом button  */
+}
+
+h1.button#button {
+  color: orange;
+  /* надає колір тегу h1 з классом button з id button */
+}
+
+div > p {
+  color: palevioletred;
+  /* якщо у div дів є class або id то варіанти .box > p (class="box") #box > p (id="box") теж працюватимуть */
+}
+
+footer > h1 {
+  color: black;
+}
+
+footer .user em {
+  color: rebeccapurple;
+}
+
+div + p {
+  color: fuchsia;
+  /* для p який іде після основного div - сестринські */
+}
+
+h1 + p {
+  color: fuchsia;
+  /* для p який іде поруч h1 - сусідські */
+}
+
+h1 ~ p {
+  color: fuchsia;
+  /* для p який іде десь після h1 на одному рівні - */
+}
+
+.card-dark {
+  background: #ededed;
+}
+
+.item {
+  color: green;
+}
+
+/* last-child */
+/* only-child -якщо в середині лише 1 тег в середині батківського */
+.item:first-child { 
+  color: blue;
+}
+
+
+p:last-of-type {
+  color: red;
+}
+
+article:only-of-type {
+  color: purple;
+}
+
+/* (2) вказано порядковий номер, Парні-(even)  Не парні-(odd)  Формули-(3n+1 */
+.item:nth-child(2) { 
+  color: orangered;
+}
+
+/* усі теги b окрім класу item */
+b:not(.item) {
+  color: blueviolet;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}
+/* для тегу з атрибутом [atr] */
+a[text] {
+  color: green;
+}
+.input-dark {
+  background: #979797;
+}
+
+.input-dark[required] {
+  background: red;
+}
+
+a[title~="456"] {
+  color: orchid;
+}
+
+ /* для атрибуту які починаються з btn div[class^="btn"] */
+ /* div[class|="btn"] для атрибуту тільки btn або btn- */
+ /* div[class*="btn"] якщо будь в якому місті є btn  */
+div[class|="btn"] {
+  background: green;
+}
+
+
+#test:target {
+  color: peru;
+}
+
+a.link:link {
+  color: blueviolet;
+}
+
+.card:active {
+  background-color: purple;
+}
+
+input {
+  background-color: greenyellow;
+}
+
+input:focus {
+  background-color: red;
+}
