@@ -95,8 +95,8 @@ abbr[title] {
  */
 
 b,
-strong {
-    font-weight: bolder;
+strong, h2 {
+    font-weight: bolder !important;
 }
 
 /**
