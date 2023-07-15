@@ -1,15 +1,17 @@
 {{#each articles}}
   <div class='article_card_id'>
 
-    {{#if isNew}}
-      <span class='article_badge'>NEW</span>
-    {{/if}}
+    <div class='img_box'>
+      <img
+        src='{{photo}}'
+        alt='{{name}}'
+        class='article_img'
+      />
 
-    <img
-      src='{{photo}}'
-      alt='{{name}}'
-      class='article_img'
-    />
+      {{#if isNew}}
+        <span class='article_badge'>NEW</span>
+      {{/if}}
+    </div>
 
     <strong class='article_img_title'>{{name}}</strong>
     <p class='article_text'>{{description}}</p>
