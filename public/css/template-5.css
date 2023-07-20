@@ -230,7 +230,7 @@
 .advantages {
   display: flex;
   gap: var(--space-l);
-}
+  }
 
 .advantages > div {
   display: flex;
@@ -354,4 +354,10 @@
   color: var(--color-title);
   font-size: var(--size-d);
   cursor: pointer;
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
 }
